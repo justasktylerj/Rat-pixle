@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.watabou.glwrap;
+package texture.pack;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
