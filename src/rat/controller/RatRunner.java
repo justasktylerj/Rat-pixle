@@ -1,13 +1,14 @@
 package rat.controller;
 
-import rat.controller.RatController;
+import assets.Animation;
+
 
 public class RatRunner 
 {
 	public static void main(String [] args)
 	{
-		RatController myController = new RatController();
-		myController.start();
+		Animation animation = new Animation(null, 0);
+		animation.start();
 		
 	}
 }

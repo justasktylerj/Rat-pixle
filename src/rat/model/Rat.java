@@ -1,33 +1,15 @@
 package rat.model;
 
-import texture.pack.TextureFilm;
 import assets.RatAsset;
+import assets.Animation;
+import assets.Frame;
+import java.awt.image.BufferedImage;
 
 
 public class Rat 
 {
-	
-	public Rat() 
-	{
-		super();
-		
-		texture( RatAsset.RAT );
-		
-		TextureFilm frames = new TextureFilm( texture, 16, 15 );
-		
-		idle = new Animation( 2, true );
-		idle.frames( frames, 0, 0, 0, 1 );
-		
-		run = new Animation( 10, true );
-		run.frames( frames, 6, 7, 8, 9, 10 );
-		
-		attack = new Animation( 15, false );
-		attack.frames( frames, 2, 3, 4, 5, 0 );
-		
-		die = new Animation( 10, false );
-		die.frames( frames, 11, 12, 13, 14 );
-		
-		play( idle );
-	}
+		  private BufferedImage[] attack = {Sprite.getSprite(2, 3, 4, 5, 0 )};
+		  private Animation attack = new Animation(attack, 15);
+		  private Animation animation = attack;
 }
 

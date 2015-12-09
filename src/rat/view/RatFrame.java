@@ -1,17 +1,17 @@
 package rat.view;
 
 import javax.swing.JFrame;
-import rat.controller.RatController;
+import assets.Animation;
 
 public class RatFrame extends JFrame
 {
-	private RatController baseController;
+	private Animation animation;
 	private RatPanel basePanel;
 	
-	public RatFrame(RatController baseController)
+	public RatFrame(Animation animation)
 	{
-		this.baseController = baseController;
-		basePanel = new RatPanel(baseController);
+		this.animation = animation;
+		basePanel = new RatPanel(animation);
 		
 		setupFrame();
 	}
@@ -25,8 +25,8 @@ public class RatFrame extends JFrame
 		this.setVisible(true);  //must be last line of setupFrame
 	}
 	
-	public RatController getBaseController()
+	public Animation getanimation()
 	{
-		return baseController;
+		return animation;
 	}
 }
